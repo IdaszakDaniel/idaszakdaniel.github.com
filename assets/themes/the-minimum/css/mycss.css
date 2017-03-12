@@ -1,0 +1,17 @@
+body, h6{
+	font-family: 'Roboto', sans-serif !important;
+}
+.the-header{
+	background-color: #617D8A;
+	padding: 40px 0px;
+	margin-top: -26px;
+}
+.the-header .logo a:visited img {
+	color: white !important;
+	margin-bottom: 0 !important;
+	height: 300px !important;
+	width: 400px !important;
+}
+.nav-global li a {
+	color: white !important;
+}
