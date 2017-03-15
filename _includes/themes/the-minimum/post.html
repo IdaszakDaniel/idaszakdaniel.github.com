@@ -1,13 +1,30 @@
+<div class="container pull-left sidebar">
+	<div class="col-md-2">
+		<div class="share-page">
+		    <span class="share">Share:</span>
+		    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fa fa-twitter-square fa-2x" aria-hidden="true"></span></a>
+		    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fa fa-facebook-square fa-2x" aria-hidden="true"></span></a>
+		    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fa fa-google-plus-square fa-2x" aria-hidden="true"></span></a>
+		    <a href="http://www.reddit.com/submit?url={{site.url}}{{page.url}}&title={{ page.title }}" rel="nofollow" target="_blank" title="Share on Reddit"><span class="fa fa-reddit-square fa-2x" aria-hidden="true"></span></a>
+		    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}" rel="nofollow" target="_blank" title="Share on Linkedin"><span class="fa fa-linkedin-square fa-2x" aria-hidden="true"></span></a>
+		</div>
+		<ul>
+			{% for post in page.linkTitle %}
+					<li><a href="#{{post.b}}">{{post.a}}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
 <article class="unit-article layout-post">
 	<div class="unit-inner unit-article-inner">
 		<div class="content">
-			<header>
+	 		<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
-						<h1 class="h2 entry-title">{{ page.title }}</h1>
-					</div><!-- unit-inner -->
-				</div><!-- unit-head -->
-			</header>
+						<h1 class="h2 entry-title" style="text-align: center">{{ page.titlePL }}</h1>
+					</div>
+				</div>
+			</header> 
 
 			<div class="bd">
 				<div class="entry-content">
