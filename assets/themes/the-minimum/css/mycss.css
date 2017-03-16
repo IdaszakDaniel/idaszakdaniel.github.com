@@ -44,6 +44,9 @@ body{
 	padding-left: 40px;
 	font-weight: bold;
 }
+.ReadMore {
+	text-align: center;
+}
 @media only screen and (max-width: 1230px) {
     .sidebar {
         visibility: hidden;
