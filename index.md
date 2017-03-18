@@ -9,7 +9,7 @@ tagline: Supporting tagline
   {% for post in site.posts %}
   	<li>
       <a href="{{ BASE_PATH }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
-      <span>{{ post.date | date_to_string }}</span> 
+      <span>{{ post.date | date_to_string }} </span>&middot;{% include read_time.html %}
       {{ post.excerpt }}
 	  	{% if post.excerpt != post.content %}
 			<p class="ReadMore"><a href="{{ site.baseurl }}{{ post.url }}" >Czytaj dalej <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
