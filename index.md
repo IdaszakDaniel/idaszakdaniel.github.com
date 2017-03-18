@@ -8,7 +8,7 @@ tagline: Supporting tagline
 <ul class="posts">
   {% for post in site.posts %}
   	<li>
-      <a href="{{ BASE_PATH }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
+      <a href="{{ BASE_PATH }}{{ post.url }}"><h4>{{ post.titlePL }}</h4></a>
       <span>{{ post.date | date_to_string }} </span>&middot;{% include read_time.html %}
       {{ post.excerpt }}
 	  	{% if post.excerpt != post.content %}
