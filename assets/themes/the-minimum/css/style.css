@@ -196,6 +196,9 @@ a:hover {
 pre {
   margin-bottom: 1.625em;
 }
+* {
+  tab-size: 4;
+}
 pre {
   color: #f2f2f2;
   background-color: #393939;
@@ -203,11 +206,15 @@ pre {
   font-family: "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
   margin-left: 0;
   margin-right: 0;
-  padding: 1.625em;
+  //padding: 1.625em;
   overflow: auto;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6);
+  //margin: 0px;
+  padding: 0px;
+  padding-left: 1.6em;
+  padding-bottom: 1.6em;
 }
 /* meta */
 /* HEADER

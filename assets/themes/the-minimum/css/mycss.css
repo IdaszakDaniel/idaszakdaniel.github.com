@@ -18,6 +18,12 @@ body{
 .nav-global li a {
 	color: white !important;
 }
+x{
+	background-color: #F7F7F9;
+	font-style: italic;
+	padding-right: 7px;
+	padding-left: 5px;
+}
 .sidebar{
 	background-color: #F1F2F1;//#ddd9d9;//#bfbfbf;
 	position: fixed; 
