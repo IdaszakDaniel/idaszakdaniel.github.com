@@ -109,7 +109,7 @@ class Ship {
 }
 
 var TieFighter = new Ship({
-  speed: 1050,
+  speed: 1200,
   hasHyperdrive: false
 });
 
