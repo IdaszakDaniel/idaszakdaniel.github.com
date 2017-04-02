@@ -1,16 +1,14 @@
 ---
 layout: post
-title: "Daj Sie Poznac #3 JSON. Service w AngularJS"
-titlePL: "Daj Się Poznać #3 JSON. Service w AngularJS"
+title: "Daj Sie Poznac #3 JSON. Service i Controller w AngularJS"
+titlePL: "Daj Się Poznać #3 JSON. Service i Controller w AngularJS"
 description: ""
 category: Article
 tags: ["DajSiePoznac","AngularJS","JSON"]
 linkTitle: [ 
 		{a: "Co to jest JSON?", b: "a1"},
 		{a: "AngularJS Service", b: "a2"},
-		{a: "AngularJS Controller", b: "a3"},
-		{a: "Klasy i dziedziczenie w ES6", b: "a4"},
-		{a: "Na czym polega polimorfizm?", b: "a5"}
+		{a: "AngularJS Controller", b: "a3"}
 		]
 excerpt_separator: <!--more-->
 ---
@@ -23,11 +21,11 @@ excerpt_separator: <!--more-->
 
 <p>W trzeciej części projektu Mistrz Makro, który w tym momencie piszę w AngularJS zajmiemy się pierwszą częścią obsługi danych. Stworzymy strukturę danych w pliku JSON oraz serwis, który zwróci te dane do kontrolera. Kontroler natomiast wyświetli je nam w konsoli. W kolejnej części będziemy dalej przesyłać dane, tak by mogły się w aplikacji zapisać, a potem wyświetlić dzięki dyrektywie. Zaczynajmy! </p> <!--more-->
 
-<x>Jeśli pobrałes już moje repozytorium z Githuba, co opisałem w <a href="http://www.idaszak.com/article/2017/03/23/daj-sie-poznac-2-projekt-konkursowy-mistrzmakro">poprzednim poście</a> to możesz teraz przeskoczyć do kolejnego commita, który pokaże Ci kod z tego posta:</x>
+<x>Jeśli pobrałeś już moje repozytorium z Githuba, co opisałem w <a href="http://www.idaszak.com/article/2017/03/23/daj-sie-poznac-2-projekt-konkursowy-mistrzmakro">poprzednim poście</a> to możesz teraz przeskoczyć do kolejnego commita, który pokaże Ci kod z tego posta:</x>
 {% highlight plain text %}$ git checkout 64b463ab817cdfb379375a6abb2ca0c616987fcf{% endhighlight %}
 
 <h3 id="a1"><span style="color:gray; font-size: 30px;">#</span> Co to jest JSON?</h3>
-<p>JSON to skrót od JavaScript Object Notation. Jest to składnia do przechowywania i przesyłania danych. Między serwerem a przeglądarką, możemy przesyłać tylko tekst, a JSON upraszcza nam to, poprzez mozliwość łatwej konwersji do obiektu języka Javascript. Nazwa może być trochę myląca, jednak JSON jest kompatybilny nie tylko z Javascriptem, ale także wieloma innymi językami.</p>
+<p>JSON to skrót od JavaScript Object Notation. Jest to składnia do przechowywania i przesyłania danych. Między serwerem a przeglądarką, możemy przesyłać tylko tekst, a JSON upraszcza nam to, poprzez możliwość łatwej konwersji do obiektu języka Javascript. Nazwa może być trochę myląca, jednak JSON jest kompatybilny nie tylko z Javascriptem, ale także wieloma innymi językami.</p>
 
 <p>W naszej aplikacji, musimy pobrać dane, zawierające ścieżki zdjęć produktów do quizu, zarówno jak i wszystkie dane, które użytkownik będzie zgadywał. Stwórzmy więc plik <code>answers.json</code>:</p>
 {% highlight json %} 
@@ -54,8 +52,8 @@ excerpt_separator: <!--more-->
 	]
 }
 {% endhighlight %}
-<p>W powyższym kodzie JSON będziemy mieli dwa obiekty, z kluczami i odpowiadajacymi im wartosciami, które potrzebne będą nam do quizu.</p>
-<h3 id="a2"><span style="color:gray; font-size: 30px;">#</span> AnguarJS Service</h3>
+<p>W powyższym kodzie JSON będziemy mieli dwa obiekty, z kluczami i odpowiadającymi im wartościami, które potrzebne będą nam do quizu.</p>
+<h3 id="a2"><span style="color:gray; font-size: 30px;">#</span> AngularJS Service</h3>
 
 <p>Musimy teraz stworzyć serwis, który odbierze nam ten plik i pozwoli na odebranie go w aplikacji. Plik nazwiemy <code>GetJson.service.js</code>, a wyglądał będzie tak:</p>
 {% highlight javascript %} 
@@ -77,9 +75,9 @@ excerpt_separator: <!--more-->
     }
 })();
 {% endhighlight %}
-<p>W powyższym kodzie pozwalamy serwisowi zwrócić funkcje <code>getData</code>, która pobiera plik i zwraca jako <code>promise</code>, który odbieramy funkcja <code>.then</code>, która jako parametry przyjmuje najpierw zachowanie w przypadku pozytywnego zakończenia <code>promise</code> a jako drugi argument, zachowanie w przypadku niepowodzenia. W naszym przypadku zwracamy dane, które odbierzemy w kontrollerze.</p>
+<p>W powyższym kodzie pozwalamy serwisowi zwrócić funkcje <code>getData</code>, która pobiera plik i zwraca jako <code>promise</code>, który odbieramy funkcją <code>.then</code>, która jako parametry przyjmuje najpierw zachowanie w przypadku pozytywnego zakończenia <code>promise</code> a jako drugi argument, zachowanie w przypadku niepowodzenia. W naszym przypadku zwracamy dane, które odbierzemy w kontrolerze.</p>
 <h3 id="a3"><span style="color:gray; font-size: 30px;">#</span> AngularJS Controller</h3>
-<p>Musimy tylko pamiętać, żeby dodać nasz kontroler w pliku <code>index.html</code>, podobnie jak wcześniej robiliśmy to z naszym modułem.</p>
+<p>Musimy tylko pamiętać, żeby dodać nasz kontroler w pliku <code>index.html</code>, podobnie jak wcześniej robiliśmy to z naszym modułem. Używamy do tego <code>ng-controller="MainController as main"</code> w <code>divie</code> o klasie <code>container</code>:</p>
 {% highlight html %} 
 <body>
   <div class="container" ng-controller="MainController as main">
@@ -114,6 +112,7 @@ excerpt_separator: <!--more-->
   };
 })();
 {% endhighlight %}
-<p>Wstrzykujemy zależność do <code>function MainController($scope, GetJson, $http)</code>, dzięki czemu możemy odwoływać się teraz do funkcji z <code>GetJson</code></p>
+<p>Wstrzykujemy zależność do <code>function MainController($scope, GetJson, $http)</code>, dzięki czemu możemy odwoływać się teraz do funkcji z <code>GetJson</code>.</p>
 <p>poprzez <code>GetJson.getData();</code> pobieramy dane z serwisu do zmiennej i następnie odbieramy znów jako <code>promise</code> i odwołujemy się do parametru <code>data</code>. Korzystamy z funkcji <code>forEach</code>, który pozwala nam przeskoczyć po wszystkich argumentach tablicy obiektów <code>questions</code>. Następnie każdą wartość wyświetlamy z osobna w konsoli. Nasz rezultat powinien wyglądać w taki sposób po odpaleniu aplikacji:</p>
-<center><img src="{{ site.baseurl }}/assets/img/DSP3_1.png" alt="" style="display: inline-block;"></center>
+<center><img src="{{ site.baseurl }}/assets/img/DSP3_1.png" alt="" style="display: inline-block;"></center><br>
+<p>Teraz pozostało stworzyć tylko modele, służące do przechowywania danych, oraz umożliwić dyrektywie swobodne korzystanie z nich, jednak to opiszę już w kolejnym poście.</p>
