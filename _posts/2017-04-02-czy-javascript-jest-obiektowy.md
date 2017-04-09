@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Czy Javascript jest jezykiem zorientowanym obiektowo"
-titlePL: "Czy Javascript jest językiem zorientowanym obiektowo?"
+title: "ES6#1 Czy Javascript jest jezykiem zorientowanym obiektowo"
+titlePL: "ES6#1 Czy Javascript jest językiem zorientowanym obiektowo?"
 description: ""
 category: Article
 ima: "/assets/img/js.png"
