@@ -4,6 +4,7 @@ title: "Daj Sie Poznac #4 OOP. Model w AngularJS"
 titlePL: "Daj Się Poznać #4 OOP. Model w AngularJS"
 description: ""
 category: Article
+ima: "/assets/img/dsppost4.png"
 tags: ["DajSiePoznac","AngularJS","OOP"]
 linkTitle: [ 
 		{a: "Tworzymy model dla makroskładników", b: "a1"},

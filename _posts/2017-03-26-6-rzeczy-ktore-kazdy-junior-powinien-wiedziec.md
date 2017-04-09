@@ -4,6 +4,7 @@ title: "6 rzeczy ktore kazdy junior powinien wiedzieć"
 titlePL: "6 rzeczy, które każdy junior powinien wiedzieć"
 description: ""
 category: Article
+ima: "/assets/img/gk.png"
 tags: ["DajSiePoznac"]
 linkTitle: [ 
 		{a: "#1 Korzystanie z Githuba", b: "a1"},

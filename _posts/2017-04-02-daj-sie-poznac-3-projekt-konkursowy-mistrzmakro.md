@@ -4,6 +4,7 @@ title: "Daj Sie Poznac #3 JSON. Service i Controller w AngularJS"
 titlePL: "Daj Się Poznać #3 JSON. Service i Controller w AngularJS"
 description: ""
 category: Article
+ima: "/assets/img/dsppost3.png"
 tags: ["DajSiePoznac","AngularJS","JSON"]
 linkTitle: [ 
 		{a: "Co to jest JSON?", b: "a1"},

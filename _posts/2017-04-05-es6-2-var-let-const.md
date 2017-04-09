@@ -4,6 +4,7 @@ title: "ES6#2 Var, Let, Const - zasieg zmiennych w JS"
 titlePL: "ES6#2 Var, Let, Const - zasięg zmiennych w JS"
 description: ""
 category: Article
+ima: "/assets/img/js.png"
 tags: ["DajSiePoznac","Javascript","ES6"]
 linkTitle: [ 
 		{a: "Zasięg zmiennych i funkcji w Javascript", b: "a1"},

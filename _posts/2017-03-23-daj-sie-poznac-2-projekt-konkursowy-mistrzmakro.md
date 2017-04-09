@@ -4,6 +4,7 @@ title: "Daj Sie Poznac #2 Github w 2 minuty. Dobre praktyki AngularJS"
 titlePL: "Daj Się Poznać #2 Github w 2 minuty. Dobre praktyki AngularJS"
 description: ""
 category: Article
+ima: "/assets/img/dsppost2.png"
 tags: ["DajSiePoznac","AngularJS","Github"]
 linkTitle: [ 
 		{a: "Co to jest GitHub? Instalacja Githuba", b: "a1"},

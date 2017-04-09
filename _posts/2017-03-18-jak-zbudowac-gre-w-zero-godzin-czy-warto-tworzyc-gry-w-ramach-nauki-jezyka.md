@@ -4,6 +4,7 @@ title: "Jak zbudowac gre w zero godzin Czy warto tworzyc gry w ramach nauki jezy
 titlePL: "Jak zbudować grę w zero godzin? Czy warto tworzyć grę w ramach nauki języka?"
 description: ""
 category: Article
+ima: "/assets/img/gk.png"
 tags: ["DajSiePoznac", "PhaserJS"]
 linkTitle: [ 
 		{a: "Jak zbudowałem grę w zero godzin?", b: "a1"},

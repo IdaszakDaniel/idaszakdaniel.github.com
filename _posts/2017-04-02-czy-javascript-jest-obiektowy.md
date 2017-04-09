@@ -4,6 +4,7 @@ title: "Czy Javascript jest jezykiem zorientowanym obiektowo"
 titlePL: "Czy Javascript jest językiem zorientowanym obiektowo?"
 description: ""
 category: Article
+ima: "/assets/img/js.png"
 tags: ["DajSiePoznac","Javascript","ES6","OOP"]
 linkTitle: [ 
 		{a: "Czy Javascript jest językiem zorientowanym obiektowo?", b: "a1"},

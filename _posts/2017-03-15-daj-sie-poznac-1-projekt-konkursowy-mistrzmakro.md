@@ -4,7 +4,8 @@ title: "Daj Sie Poznac #1 Projekt konkursowy MistrzMakro"
 titlePL: "Daj Się Poznać #1 Projekt konkursowy MistrzMakro"
 description: ""
 category: Article
-tags: ["DajSiePoznac","Ionic"]
+ima: "/assets/img/dsppost1.png"
+tags: ["DajSiePoznac","Ionic","AngularJS"]
 linkTitle: [ 
 		{a: "Kim jestem?", b: "a1"},
 		{a: "MistrzMakro czyli projekt konkursowy", b: "a2"},
