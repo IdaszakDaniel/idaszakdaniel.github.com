@@ -8,14 +8,26 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Idaszak.com Blog
+title : Idaszak Blog - Javascript, AngularJS
+description: Javascript okiem osoby rozpoczynającej swoją drogę z programowaniem
+posts: Javascript okiem osoby rozpoczynającej swoją drogę z programowaniem
+url: www.idaszak.com
 tagline: Site Tagline
+logo: /assets/img/logo.png
+lang: pl
 author :
   name : Daniel Idaszak
-  email : blah@email.test
+  email : idaszak1@gmail.com
   github : IdaszakDaniel
   twitter : DanielIdaszak
   feedburner : IdaszakcomBlog
+social:
+  name: Daniel Idaszak
+  links:
+    - https://twitter.com/DanielIdaszak
+    - https://www.linkedin.com/in/daniel-idaszak-8b1481121/
+    - https://github.com/IdaszakDaniel
+
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -27,7 +39,8 @@ author :
 #
 production_url : http://www.idaszak.com
 
-gems: ["jekyll-sitemap"]
+gems: ["jekyll-sitemap", "jekyll-seo-tag"]
+    
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
