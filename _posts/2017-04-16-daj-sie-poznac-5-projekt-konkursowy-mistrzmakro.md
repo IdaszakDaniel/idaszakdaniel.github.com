@@ -7,7 +7,6 @@ date: 2017-04-16 17:20:00 +0100
 category: Article
 ima: "/assets/img/dsppost5.png"
 tags: ["DajSiePoznac","AngularJS"]
-date: site.time
 linkTitle: [ 
 		{a: "Nowa metoda modelu ProductModel", b: "a1"},
     {a: "Tworzymy widok dyrektywy", b: "a2"}
