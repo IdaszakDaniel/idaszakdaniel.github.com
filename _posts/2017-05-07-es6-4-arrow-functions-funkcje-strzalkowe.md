@@ -4,7 +4,7 @@ title: "ES6#4 Arrow functions czyli funkcje strzalkowe"
 titlePL: "ES6#4 Arrow functions czyli funkcje strzałkowe"
 description: ""
 category: Article
-date: 2017-05-07 14:40:00 +0100
+date: 2017-05-07 13:40:00 +0100
 ima: "/assets/img/js.png"
 tags: ["DajSiePoznac","Javascript","ES6","Programowanie Funkcyjne"]
 linkTitle: [ 
