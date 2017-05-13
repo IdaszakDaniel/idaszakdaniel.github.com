@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Daj Sie Poznac #5 Dyrektywa w AngularJS - czesc 2"
-titlePL: "Daj Się Poznać #5 Dyrektywa w AngularJS - część 2"
+title: "Daj Sie Poznac #6 Dyrektywa w AngularJS - czesc 2"
+titlePL: "Daj Się Poznać #6 Dyrektywa w AngularJS - część 2"
 description: ""
 date: 2017-05-03 23:00:00 +0100
 category: Article
