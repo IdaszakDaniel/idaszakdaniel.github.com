@@ -5,7 +5,7 @@ titlePL: "Podstawy Programowania Funkcyjnego #1 - fundamenty"
 description: ""
 category: Article
 date: 2017-05-19 17:00:00 +0100
-ima: "/assets/img/js.png"
+ima: "/assets/img/fp1.png"
 tags: ["DajSiePoznac","Javascript","ES6","Programowanie Funkcyjne"]
 linkTitle: [ 
 		{a: "Argumenty funkcji", b: "a1"},
@@ -18,9 +18,10 @@ excerpt_separator: <!--more-->
 <!-- {% highlight javascript %} 
 {% endhighlight %} -->
 {% include JB/setup %}
-
-<img src="{{ site.baseurl }}/assets/img/js.png" >
-
+<center>
+<img src="{{ site.baseurl }}/assets/img/js.png" style="display: inline-block;">
+<img src="{{ site.baseurl }}/assets/img/fp.png" style="display: inline-block;">
+</center>
 <p>W tej serii możecie nauczyć się razem ze mną Podstaw Programowania Funkcyjnego. Będzie to świetny sposób na poznanie zastosowań standardu Javascript - ES6. Nawet jeśli piszesz kod obiektowo, warto poznać kilka podstaw, które pozwolą pisać krótszy i czytelniejszy kod. Na sam początek zaczniemy od fundamentów i poznamy najważniejsze zasady. Zaczynajmy!</p><!--more-->
 
 
