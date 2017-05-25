@@ -6,7 +6,7 @@ description: ""
 category: Article
 date: 2017-05-25 11:30:00 +0100
 ima: "/assets/img/fp2.png"
-tags: ["DajSiePoznac","Javascript",Programowanie Funkcyjne"]
+tags: ["DajSiePoznac","Javascript","Programowanie Funkcyjne"]
 linkTitle: [ 
 		{a: "Czym jest domknięcie - krótka definicja", b: "a1"},
 		{a: "Czym na prawdę jest domknięcie?", b: "a2"},
