@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "ES6#1 Czy Javascript jest jezykiem zorientowanym obiektowo"
-titlePL: "ES6#1 Czy Javascript jest językiem zorientowanym obiektowo?"
+title: "ES6#1 Czy JavaScript jest jezykiem zorientowanym obiektowo"
+titlePL: "ES6#1 Czy JavaScript jest językiem zorientowanym obiektowo?"
 description: ""
 category: Article
 ima: "/assets/img/js.png"
-tags: ["DajSiePoznac","Javascript","ES6","OOP"]
+tags: ["DajSiePoznac","JavaScript","ES6","OOP"]
 linkTitle: [ 
-		{a: "Czy Javascript jest językiem zorientowanym obiektowo?", b: "a1"},
-		{a: "Jak wyglądają obiekty w Javascript i czym są klasy?", b: "a2"},
+		{a: "Czy JavaScript jest językiem zorientowanym obiektowo?", b: "a1"},
+		{a: "Jak wyglądają obiekty w JavaScript i czym są klasy?", b: "a2"},
 		{a: "Co to jest prototyp i jak wygląda dziedziczenie?", b: "a3"},
 		{a: "Klasy i dziedziczenie w ES6", b: "a4"},
 		{a: "Na czym polega polimorfizm?", b: "a5"}
@@ -20,12 +20,12 @@ excerpt_separator: <!--more-->
 <img src="{{ site.baseurl }}/assets/img/js.png" >
 
 
-<p>AngularJS, w którym piszę swój projekt, jest frameworkiem który promuje obiektowe podejście do programowania, jednak na początek warto byłoby zadać sobie pytanie, czy Javascript jest językiem zorientowanym obiektowo? Postaram się wyjaśnić czy jest to prawdą, oraz wytłumaczyć jak Javascript różni się od innych języków. Zahaczymy także o najnowszy standard tego języka i jego podejście do programowania obiektowego. Zaczynajmy!</p> <!--more-->
+<p>AngularJS, w którym piszę swój projekt, jest frameworkiem który promuje obiektowe podejście do programowania, jednak na początek warto byłoby zadać sobie pytanie, czy JavaScript jest językiem zorientowanym obiektowo? Postaram się wyjaśnić czy jest to prawdą, oraz wytłumaczyć jak JavaScript różni się od innych języków. Zahaczymy także o najnowszy standard tego języka i jego podejście do programowania obiektowego. Zaczynajmy!</p> <!--more-->
 
-<h3 id="a1"><span style="color:gray; font-size: 30px;">#</span> Czy Javascript jest językiem zorientowanym obiektowo?</h3>
-<p>Javascript jako jeden z niewielu języków programowania jest zorientowany obiektowo. Zaraz, zaraz, zapytacie - przecież inne języki też mają obiektowość! Jednak takie popularne języki jak C++ czy Python powinny nazwane być precyzyjniej "języki klasowo zorientowane". Javascript różni się od nich tym, że w ogóle nie posiada klas (nie jest to do końca prawdą, ale wytłumaczę to w dalszej części tego posta). Czy taka różnica jest zaletą czy wadą? Wielu programistów uważa że dziedziczenie metod i zmiennych z klas to złe podejście, także możemy potraktować to jako zaletę. Klasy jednak, upraszczają wiele rzeczy o których musielibyśmy pamiętać w Javascripcie, dlatego sporo osób dąży do stworzenia klas w tym języku.</p>
+<h3 id="a1"><span style="color:gray; font-size: 30px;">#</span> Czy JavaScript jest językiem zorientowanym obiektowo?</h3>
+<p>JavaScript jako jeden z niewielu języków programowania jest zorientowany obiektowo. Zaraz, zaraz, zapytacie - przecież inne języki też mają obiektowość! Jednak takie popularne języki jak C++ czy Python powinny nazwane być precyzyjniej "języki klasowo zorientowane". JavaScript różni się od nich tym, że w ogóle nie posiada klas (nie jest to do końca prawdą, ale wytłumaczę to w dalszej części tego posta). Czy taka różnica jest zaletą czy wadą? Wielu programistów uważa że dziedziczenie metod i zmiennych z klas to złe podejście, także możemy potraktować to jako zaletę. Klasy jednak, upraszczają wiele rzeczy o których musielibyśmy pamiętać w Javascripcie, dlatego sporo osób dąży do stworzenia klas w tym języku.</p>
 
-<p>Wiele osób twierdzi, że w języku Javascript wszystko jest obiektem, jednak nie jest to do końca prawdą. Argumentują to faktem, że np. <code>string</code> posiada swoje metody, takie jak <code>length</code>, jednak w rzeczywistości wygląda to inaczej. Sam <code>string</code> jest typem prymitywnym, jednak możemy stworzyć z niego obiekt:</p>
+<p>Wiele osób twierdzi, że w języku JavaScript wszystko jest obiektem, jednak nie jest to do końca prawdą. Argumentują to faktem, że np. <code>string</code> posiada swoje metody, takie jak <code>length</code>, jednak w rzeczywistości wygląda to inaczej. Sam <code>string</code> jest typem prymitywnym, jednak możemy stworzyć z niego obiekt:</p>
 {% highlight javascript %} 
 var testString = "who am I";
 typeof testString; //"string"
@@ -34,7 +34,7 @@ typeof testObject; // "object"
 {% endhighlight %}
 <p>W praktyce, jeśli zastosujemy na stringu funkcję taką jak <code>length</code> czy <code>charAt</code>, to język niejawnie tworzy z niego obiekt, a potem wywołuje daną funkcję.</p>
 
-<h3 id="a2"><span style="color:gray; font-size: 30px;">#</span> Jak wyglądają obiekty w Javascript i czym są klasy?</h3>
+<h3 id="a2"><span style="color:gray; font-size: 30px;">#</span> Jak wyglądają obiekty w JavaScript i czym są klasy?</h3>
 <p>Na początek stwórzmy obiekt z trzema własnościami:</p>
 {% highlight javascript %} 
 var myObject = {
@@ -55,11 +55,11 @@ myObject.foo; //"foo"
 
 
 <p>Klasa sama w sobie nie jest obiektem, tylko schematem budowy obiektów. Żeby otrzymać obiekt, na którym będzie można przykładowo wykonać jakąś metodę, musimy najpierw stworzyć obiekt, nazywany instancją tej klasy.
-Czym różni się dziedziczenie z klasy od dziedziczenia z obiektu? Jeśli tworzmy nowy obiekt z klasy, to wszystkie metody będą kopiowane do tego obiektu. W Javascript dziedziczenie jest utrudnione, ponieważ nowy obiekt zamiast skopiować metodę obiektu nadrzędnego, tylko się do niej odwołuje.</p> 
+Czym różni się dziedziczenie z klasy od dziedziczenia z obiektu? Jeśli tworzmy nowy obiekt z klasy, to wszystkie metody będą kopiowane do tego obiektu. W JavaScript dziedziczenie jest utrudnione, ponieważ nowy obiekt zamiast skopiować metodę obiektu nadrzędnego, tylko się do niej odwołuje.</p> 
 
 <h3 id="a3"><span style="color:gray; font-size: 30px;">#</span> Co to jest prototyp i jak wygląda dziedziczenie?</h3>
 
-<p>Każdy obiekt w Javascript ma wbudowaną funkcję, która nazywa się <code>prototype</code> i łączy go z innym obiektem. Obiekt, który nie dziedziczy nic z innego obiektu, ma przypisany prototyp do <code>object.prototype</code>. W momencie, w którym wywołujemy własność obiektu i program nie znajdzie jej w danym obiekcie, wtedy przesuwa się po nadrzędnych obiektach tak długo dopóki jej nie znajdzie, lub nie dotrze do końca łańcucha prototypów. W praktyce możemy przez to wywołać nieistniejącą w interesującym nas obiekcie metodę, a otrzymać odpowiedź od obiektu położonego wyżej w łańcuchu prototypów.</p>
+<p>Każdy obiekt w JavaScript ma wbudowaną funkcję, która nazywa się <code>prototype</code> i łączy go z innym obiektem. Obiekt, który nie dziedziczy nic z innego obiektu, ma przypisany prototyp do <code>object.prototype</code>. W momencie, w którym wywołujemy własność obiektu i program nie znajdzie jej w danym obiekcie, wtedy przesuwa się po nadrzędnych obiektach tak długo dopóki jej nie znajdzie, lub nie dotrze do końca łańcucha prototypów. W praktyce możemy przez to wywołać nieistniejącą w interesującym nas obiekcie metodę, a otrzymać odpowiedź od obiektu położonego wyżej w łańcuchu prototypów.</p>
 
 <p>Funkcje prototypowe są dostępne dla każdej instancji. Nową instancję obiektu możemy stworzyć używając słowa kluczowego <code>new</code>:</p>
 {% highlight javascript %} 
@@ -94,7 +94,7 @@ r2dr.speak(); // I am astromech
 
 <h3 id="a4"><span style="color:gray; font-size: 30px;">#</span> Klasy i dziedziczenie w ES6</h3>
 <p>Jeśli chcesz pisać w ES6, musisz zainstalować kompilator <a href="https://babeljs.io/">babel</a> lub przetestować kod online np. na stronie <a href="http://jsbin.com">http://jsbin.com</a> </p>
-<p>Skoro w standardzie ES6 języka Javascript pojawiło się słowo kluczowe <code>class</code>, czy oznacza to, że wprowadzono normalne klasy? Tak naprawdę zmieniła się tylko składnia kodu na krótszą i czytelniejszą, jednak za kulisami wszystko działa tak samo jak w przypadku funkcji z prototypem.</p>
+<p>Skoro w standardzie ES6 języka JavaScript pojawiło się słowo kluczowe <code>class</code>, czy oznacza to, że wprowadzono normalne klasy? Tak naprawdę zmieniła się tylko składnia kodu na krótszą i czytelniejszą, jednak za kulisami wszystko działa tak samo jak w przypadku funkcji z prototypem.</p>
 
 <p>Spróbujmy teraz stworzyć klasę w ES6 i stworzyć jej instancję:</p>
 {% highlight javascript %} 

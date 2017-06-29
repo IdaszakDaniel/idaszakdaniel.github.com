@@ -21,7 +21,7 @@ excerpt_separator: <!--more-->
 <img src="{{ site.baseurl }}/assets/img/DSP.png" alt="" style="display: inline-block; padding-right: 20px;">
 <img src="{{ site.baseurl }}/assets/img/angular.png" alt="" style="display: inline-block;">
 </center><br>
-<p>W poprzednich częściach tworzyliśmy quiz Mistrz Makro, pozwalający na sprawdzenie rozbieżności w diecie IIFYM. Zbudowaliśmy całą działającą aplikację w AngularJS, a w poprzednim artykule zrefaktoryzowaliśmy kod przy użyciu standardu Javascript ES6. Tym razem nadamy wygląd naszej animacji korzystając z preprocesora CSS, czyli LESS. Stworzymy kilka animacji, które upiększą i poprawią interfejs aplikacji. Zaczynajmy!</p><!--more-->
+<p>W poprzednich częściach tworzyliśmy quiz Mistrz Makro, pozwalający na sprawdzenie rozbieżności w diecie IIFYM. Zbudowaliśmy całą działającą aplikację w AngularJS, a w poprzednim artykule zrefaktoryzowaliśmy kod przy użyciu standardu JavaScript ES6. Tym razem nadamy wygląd naszej animacji korzystając z preprocesora CSS, czyli LESS. Stworzymy kilka animacji, które upiększą i poprawią interfejs aplikacji. Zaczynajmy!</p><!--more-->
 
 <x>Jeśli pobrałeś już moje repozytorium z Githuba, co opisałem w <a href="http://www.idaszak.com/article/2017/03/23/daj-sie-poznac-2-projekt-konkursowy-mistrzmakro">poprzednim poście</a> to możesz teraz przeskoczyć do kolejnego commita, który pokaże Ci kod z tego posta:</x>
 {% highlight plain text %}$ git checkout bbfcb167b0b5841b52e703e6c3e7484079452e4a{% endhighlight %}

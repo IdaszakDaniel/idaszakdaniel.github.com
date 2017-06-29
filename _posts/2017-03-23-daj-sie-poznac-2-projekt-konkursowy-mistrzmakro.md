@@ -107,7 +107,7 @@ Jeśli udało Ci się wszystko zainstalować, to będziesz miał teraz możliwo�
 	</body>
 	{% endhighlight %}
 <p>W kodzie dyrektywy "quiz", który jest bardzo podobny do wcześniej omówionego modelu, dodatkowo można zauważyć Dependency Injection czyli wstrzykiwanie zależności. Widzimy to zjawisko w miejscu gdzie znajduje się parametr funkcji. Dyrektywa ma dzięki temu dostęp do wszystkich metod z modelu quizFactory. Wstrzykiwanie zależności ułatwia tworzenie niezależnych obiektów i sprawia że są one łatwiejsze do testowania.</p>
-	{% highlight Javascript %} 
+	{% highlight JavaScript %} 
 	(function() {
 	  'use strict';
 
@@ -122,13 +122,13 @@ Jeśli udało Ci się wszystko zainstalować, to będziesz miał teraz możliwo�
 	{% endhighlight %}
 <h3 id="a4"><span style="color:gray; font-size: 30px;">#</span> Dobre praktyki AngularJS</h3>
 <p>Dlaczego kod nie może znajdować się w jednym pliku? Po co każdy plik owinięty jest w IIFE? Co to jest strict mode? Dlaczego w innych tutorialach deklaracja modułu wygląda inaczej?</p>
-	{% highlight Javascript %} 
+	{% highlight JavaScript %} 
 	(function() {
 	  'use strict';
 
 	})();
 	{% endhighlight %}
 <p><b>IIFE czyli Immediately Invoked Function Expression</b> to anonimowa funkcja, wywołująca się automatycznie w miejscu, w którym została stworzona. Pozwala na użycie trybu strict tylko wewnątrz niej, co znacznie podnosi jakość naszego kodu. Jakie jeszcze ma zalety? Wszystkie zmienne zadeklarowane w jej wnętrzu są lokalne, dzięki czemu nie mają długości życia większej niż to potrzebne, oraz zapobiega to kolizji zmiennych.</p>
-<p><b>Co to jest strict mode?</b> Pracując w strict mode, Javascript nie pomija niektórych mniejszych błędów, oraz poprawia błędy i złe praktyki pisania kodu, które przeszkadzają w optymalizacji kodu przez przeglądarkę. Przykładowo - przypadkowe stworzenie zmiennej globalnej zostanie pokazane jako błąd. Strict mode nie pozwala także na używanie słów kluczowych, które będą miały zastosowanie w nowszych wersjach ECMAScript. </p>
+<p><b>Co to jest strict mode?</b> Pracując w strict mode, JavaScript nie pomija niektórych mniejszych błędów, oraz poprawia błędy i złe praktyki pisania kodu, które przeszkadzają w optymalizacji kodu przez przeglądarkę. Przykładowo - przypadkowe stworzenie zmiennej globalnej zostanie pokazane jako błąd. Strict mode nie pozwala także na używanie słów kluczowych, które będą miały zastosowanie w nowszych wersjach ECMAScript. </p>
 <p><b>Jeden komponent w jednym pliku</b>, najlepiej żeby plik nie przekraczał 400 linii kodu. Jakie przynosi to zalety? Zwiększona czytelność, oraz spore ułatwienie, jeśli pracujesz nad projektem z całym zespołem. Pojedyncze pliki łatwiej debuggować oraz przeprowadzać na nich testy jednostkowe.</p>
 <p>Dlaczego w innych tutorialach wszyscy przypisują moduł do zmiennej? Jest to niepoprawne, a w przypadku gdzie mamy jeden moduł na plik wręcz zbędne. Brak przypisanej zmiennej poprawia czytelność kodu, oraz zapobiega przypadkowemu użyciu tej zmiennej ponownie.</p>

@@ -5,7 +5,7 @@ titlePL: "ES6#3 Destrukturyzacja, czyli nowe podejście do tablic i obiektów"
 description: ""
 category: Article
 ima: "/assets/img/js.png"
-tags: ["DajSiePoznac","Javascript","ES6"]
+tags: ["DajSiePoznac","JavaScript","ES6"]
 linkTitle: [ 
 		{a: "Destrukturyzacja tablic", b: "a1"},
 		{a: "Destrukturyzacja obiektów", b: "a2"},
@@ -17,7 +17,7 @@ excerpt_separator: <!--more-->
 
 <img src="{{ site.baseurl }}/assets/img/js.png" >
 
-<p>W serii poświęconej standardowi ES6 języka Javascript opisałem już pojawiające się tam słowo kluczowe <code>class</code>, pokazałem przykłady zastosowania <code>let</code> oraz <code>const</code>. Tym razem zajmiemy się destrukturyzacją i różnicami między operatorem <code>spread</code> i <code>rest</code>. Umożliwiają one użycie nowego sposobu obsługiwania tablic oraz obiektów, który jest szybszy, łatwiejszy oraz precyzyjniejszy. Możemy dzięki nim wydobywać najróżniejsze, nawet zagnieżdżone wartości, przy użyciu skróconego zapisu. Zaczynajmy!</p> <!--more-->
+<p>W serii poświęconej standardowi ES6 języka JavaScript opisałem już pojawiające się tam słowo kluczowe <code>class</code>, pokazałem przykłady zastosowania <code>let</code> oraz <code>const</code>. Tym razem zajmiemy się destrukturyzacją i różnicami między operatorem <code>spread</code> i <code>rest</code>. Umożliwiają one użycie nowego sposobu obsługiwania tablic oraz obiektów, który jest szybszy, łatwiejszy oraz precyzyjniejszy. Możemy dzięki nim wydobywać najróżniejsze, nawet zagnieżdżone wartości, przy użyciu skróconego zapisu. Zaczynajmy!</p> <!--more-->
 
 <p>Jeśli nie czytałeś jeszcze wcześniejszych części, to rzuć okiem na <a href="http://www.idaszak.com/article/2017/04/05/es6-2-var-let-const">http://www.idaszak.com/article/2017/04/05/es6-2-var-let-const</a>,<br> ponieważ w poniższym kodzie będziemy korzystać z <code>let</code> oraz <code>const</code>. Zapraszam także do zapoznania się z klasami w ES6: <br><a href="http://www.idaszak.com/article/2017/04/02/czy-javascript-jest-obiektowy">http://www.idaszak.com/article/2017/04/02/czy-javascript-jest-obiektowy</a></p>
 

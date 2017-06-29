@@ -6,7 +6,7 @@ description: ""
 category: Article
 date: 2017-05-19 17:00:00 +0100
 ima: "/assets/img/fp1.png"
-tags: ["DajSiePoznac","Javascript","ES6","Programowanie Funkcyjne"]
+tags: ["DajSiePoznac","JavaScript","ES6","Programowanie Funkcyjne"]
 linkTitle: [ 
 		{a: "Argumenty funkcji", b: "a1"},
 		{a: "Rest - destrukturyzacja", b: "a2"},
@@ -22,12 +22,12 @@ excerpt_separator: <!--more-->
 <img src="{{ site.baseurl }}/assets/img/js.png" style="display: inline-block;">
 <img src="{{ site.baseurl }}/assets/img/fp.png" style="display: inline-block;">
 </center>
-<p>W tej serii możecie nauczyć się razem ze mną Podstaw Programowania Funkcyjnego. Będzie to świetny sposób na poznanie zastosowań standardu Javascript - ES6. Nawet jeśli piszesz kod obiektowo, warto poznać kilka podstaw, które pozwolą pisać krótszy i czytelniejszy kod. Na sam początek zaczniemy od fundamentów i poznamy najważniejsze zasady. Zaczynajmy!</p><!--more-->
+<p>W tej serii możecie nauczyć się razem ze mną Podstaw Programowania Funkcyjnego. Będzie to świetny sposób na poznanie zastosowań standardu JavaScript - ES6. Nawet jeśli piszesz kod obiektowo, warto poznać kilka podstaw, które pozwolą pisać krótszy i czytelniejszy kod. Na sam początek zaczniemy od fundamentów i poznamy najważniejsze zasady. Zaczynajmy!</p><!--more-->
 
 
 
 <h3 id="a1"><span style="color:gray; font-size: 30px;">#</span> Argumenty funkcji</h3>
-<p>W języku Javascript, funkcja może przyjmować różną ilość argumentów i zależnie od ich ilości możemy wykonać w niej inny fragment kodu. Wcześniej, czyli przed wprowadzeniem standardu ES6 mogliśmy korzystać tylko ze specjalnej zmiennej <code>arguments</code>, jednak mamy teraz lepsze możliwości, a korzystanie z tej zmiennej uznawane jest za złą praktykę.</p>
+<p>W języku JavaScript, funkcja może przyjmować różną ilość argumentów i zależnie od ich ilości możemy wykonać w niej inny fragment kodu. Wcześniej, czyli przed wprowadzeniem standardu ES6 mogliśmy korzystać tylko ze specjalnej zmiennej <code>arguments</code>, jednak mamy teraz lepsze możliwości, a korzystanie z tej zmiennej uznawane jest za złą praktykę.</p>
 <p>Spójrzmy na poniższy kod, który korzysta z tej zmiennej:</p>
 {% highlight javascript %} 
 var show = function(a, b) {

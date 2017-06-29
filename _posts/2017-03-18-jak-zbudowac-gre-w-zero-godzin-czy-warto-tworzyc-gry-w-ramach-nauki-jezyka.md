@@ -19,7 +19,7 @@ excerpt_separator: <!--more-->
 Dopiero po przetestowaniu języka, w czym bardzo pomocne były najróżniejsze tutoriale, otwierają się oczy. Nowe spojrzenie pozwala nam dużo lepiej i efektywniej przebrnąć przez labirynt językowych niuansów.</p><!--more-->
 <br>
 <i>“Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter.” — Eric S. Raymond</i>
-<p>Teoretyczne wykształcenie informatyczne nie czyni nikogo programistą ekspertem, nie bardziej jak studiowanie pędzli i farb może uczynić kogoś malarzem ekspertem. Dlatego postanowiłem zacząć od części praktycznej, bo w końcu na tym polega programowanie. Jedną z pierwszych rzeczy, które zrobiłem podczas poznawania Javascriptu było stworzenie prostej gry.
+<p>Teoretyczne wykształcenie informatyczne nie czyni nikogo programistą ekspertem, nie bardziej jak studiowanie pędzli i farb może uczynić kogoś malarzem ekspertem. Dlatego postanowiłem zacząć od części praktycznej, bo w końcu na tym polega programowanie. Jedną z pierwszych rzeczy, które zrobiłem podczas poznawania JavaScriptu było stworzenie prostej gry.
 Skoro posiadam już większość potrzebnych narzędzi, to dlaczego nie spróbować stworzyć gry w HTML5?
 Wybór padł na Framework PhaserJs, który jest świetny do tworzenia gier platformowych i pozwala na odpalenie takiej gry na stronie internetowej lub w dowolnym urządzeniu mobilnym.</p>
 <h3 id="a1"><span style="color:gray; font-size: 30px;">#</span> Jak zbudowałem grę w zero godzin?</h3>
@@ -40,7 +40,7 @@ Tutorial zapewnia wszystkie potrzebne grafiki i informacje, żeby bezboleśnie w
 		{% highlight Config file %}C:\projekt\> npm install --save-dev browser-sync{% endhighlight %}
 	<li>Utwórz plik gulpfile.js z zawartością:</li>
 
-	{% highlight Javascript %}
+	{% highlight JavaScript %}
 	var gulp = require('gulp');
 	var browserSync = require('browser-sync');
 
@@ -63,7 +63,7 @@ Tutorial zapewnia wszystkie potrzebne grafiki i informacje, żeby bezboleśnie w
 <p>Nasz projekt powinien otworzyć się w przeglądarce internetowej. Do gulpa dodaliśmy także task browser-sync, dzięki czemu każda zmiana, którą wprowadzimy w projekcie pojawi się od razu w oknie naszej przeglądarki pod adresem Localhost:3000.</p>
 <h3 id="a4"><span style="color:gray; font-size: 30px;">#</span> PhaserJs co dalej?</h3>
 <p>Jeśli już zbudujesz sobie w głowie zarys gry którą chciałbyś stworzyć, to warto zajrzeć do przykładów na stronie phasera znajdujących się w podanym linku <a href="https://phaser.io/examples">https://phaser.io/examples</a>. Jest tam wiele gotowych rozwiązań posegregowanych na najróżniejsze kategorie takie jak fizyka, obsługa klawiatury, animacje czy kamera. Jest to bardzo wygodne rozwiązanie, a jeśli zagłębisz się w bardziej skomplikowany problem, to z pewnością pomoże Ci dokumentacja ze strony phasera, która z resztą jest bardzo przejrzyście napisana.</p>
-<p>Dbając o kod, warto zainteresować się, jak podzielić poszczególne stany na pliki. Możemy zrobić to przy użyciu najnowszego standardu języka Javascript, czyli ES6, lub łatwiejszą, klasyczną metodą.
+<p>Dbając o kod, warto zainteresować się, jak podzielić poszczególne stany na pliki. Możemy zrobić to przy użyciu najnowszego standardu języka JavaScript, czyli ES6, lub łatwiejszą, klasyczną metodą.
 Wersję ES6 świetnie opisał Josh Morony:<br> <a href="https://www.joshmorony.com/level-up-your-phaser-games-with-es6/">https://www.joshmorony.com/level-up-your-phaser-games-with-es6/</a><br>
 Ale rozwiązanie Chada także jest bardzo dobre:<br> <a href="http://perplexingtech.weebly.com/game-dev-blog/using-states-in-phaserjs-javascript-game-developement">http://perplexingtech.weebly.com/game-dev-blog/using-states-in-phaserjs-javascript-game-developement</a></p>
-<p>Wiele pomocnych postów udało mi się znaleźć także na forum programistów gier w HTML5, gdzie phaserowi poświęcony jest cały dział. Możesz znaleźć tam też informacje na temat innych, chociaż mniej popularnych frameworków do gier pisanych w języku Javascript.<br> <a href="http://www.html5gamedevs.com/forum/14-phaser/">http://www.html5gamedevs.com/forum/14-phaser/</a></p>
+<p>Wiele pomocnych postów udało mi się znaleźć także na forum programistów gier w HTML5, gdzie phaserowi poświęcony jest cały dział. Możesz znaleźć tam też informacje na temat innych, chociaż mniej popularnych frameworków do gier pisanych w języku JavaScript.<br> <a href="http://www.html5gamedevs.com/forum/14-phaser/">http://www.html5gamedevs.com/forum/14-phaser/</a></p>

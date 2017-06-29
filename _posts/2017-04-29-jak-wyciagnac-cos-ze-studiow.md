@@ -31,7 +31,7 @@ excerpt_separator: <!--more-->
 		Jako studenci możemy otrzymać pakiet Office 365, czyli Microsoft Word, Microsoft Excel oraz Microsoft Powerpoint, całkowicie za darmo, pod warunkiem że nasza uczelnia bierze udział w tym programie. Uzyskaj dostęp: <a href="https://products.office.com/en-us/student/office-in-education">tutaj</a>
 	<img src="{{ site.baseurl }}/assets/img/P5_14.jpg" alt="">
 	<li>Microsoft Imagine (Dreamspark)</li>
-		Podobnie, jak Office 365, dostęp do DreamSparka otrzymują tylko studenci uczelni biorących udział w programie. Otrzymujemy dzięki temu darmowy system operacyjny Windows 10, 8.1 lub 7. W paczce otrzymujemy również Visual Studio Code, które ostatnio jest bardzo popularnym IDE do Javascriptowych aplikacji. Przede wszystkim otrzymujemy wersję Enterprise Visual Studio 2017, która pozwala programować w wielu językach, oraz wiele innych użytecznych programów. Uzyskaj dostęp: <a href="https://imagine.microsoft.com/en-us/catalog">tutaj</a>.<br> Co więcej, otrzymujemy także dostęp do Microsoftowej chmury Azure całkowicie za darmo. Więcej na ten temat możemy przeczytać na stronie <a href="https://www.microsoft.com/pl-pl/aleyakto">AleYakTo</a>
+		Podobnie, jak Office 365, dostęp do DreamSparka otrzymują tylko studenci uczelni biorących udział w programie. Otrzymujemy dzięki temu darmowy system operacyjny Windows 10, 8.1 lub 7. W paczce otrzymujemy również Visual Studio Code, które ostatnio jest bardzo popularnym IDE do JavaScriptowych aplikacji. Przede wszystkim otrzymujemy wersję Enterprise Visual Studio 2017, która pozwala programować w wielu językach, oraz wiele innych użytecznych programów. Uzyskaj dostęp: <a href="https://imagine.microsoft.com/en-us/catalog">tutaj</a>.<br> Co więcej, otrzymujemy także dostęp do Microsoftowej chmury Azure całkowicie za darmo. Więcej na ten temat możemy przeczytać na stronie <a href="https://www.microsoft.com/pl-pl/aleyakto">AleYakTo</a>
 </ul>
 <h3 id="a2"><span style="color:gray; font-size: 30px;">#</span> Github Student Pack</h3>
 <p>Żeby otrzymać Github Student Pack, wystarczy posiadać zaświadczenie o studiowaniu, bądź zeskanowaną legitymację studencką i wysłać ją poprzez: <a href="https://education.github.com/discount_requests/new">link</a></p>
@@ -56,7 +56,7 @@ excerpt_separator: <!--more-->
 	<p>Darmowe miesięczne członkostwo w kursie Web Developmentu, na bootcampie online, warte 149$.</p>
 	<img src="{{ site.baseurl }}/assets/img/P5_8.jpg" alt="">
 	<li>Thinkful</li>
-	<p>Kurs HTML, CSS oraz Javascript, dostępny za darmo przez jeden miesiąc.</p>
+	<p>Kurs HTML, CSS oraz JavaScript, dostępny za darmo przez jeden miesiąc.</p>
 	<img src="{{ site.baseurl }}/assets/img/P5_6.jpg" alt="">
 	<li>HackHands</li>
 	<p>Pomoc programistyczna dostępna 24/7 - otrzymujemy 25$ do wykorzystania.</p>
@@ -69,8 +69,8 @@ excerpt_separator: <!--more-->
 <img src="{{ site.baseurl }}/assets/img/P5_11.png" alt="" style="display: inline-block;">
 <img src="{{ site.baseurl }}/assets/img/P5_12.jpg" alt="" style="display: inline-block;">
 </center><br>
-<p>Jeśli programujesz w Javie, PHP, Ruby, Pyhtonie, Javascript, Objective-C lub .NET, na pewno znajdziesz tutaj dla siebie ciekawe środowisko całkowicie za darmo. Uzyskaj dostęp: <a href="https://www.jetbrains.com/student/">tutaj</a>.</p>
-<p>Zachęcam szczególnie do przetestowania WebStorma, który jest popularnym IDE do Javascript</p>
+<p>Jeśli programujesz w Javie, PHP, Ruby, Pyhtonie, JavaScript, Objective-C lub .NET, na pewno znajdziesz tutaj dla siebie ciekawe środowisko całkowicie za darmo. Uzyskaj dostęp: <a href="https://www.jetbrains.com/student/">tutaj</a>.</p>
+<p>Zachęcam szczególnie do przetestowania WebStorma, który jest popularnym IDE do JavaScript</p>
 <h3 id="a4"><span style="color:gray; font-size: 30px;">#</span> Axure RP Pro</h3>
 <img src="{{ site.baseurl }}/assets/img/P5_16.png" alt="">
 <p>Możemy otrzymać darmową licencję programu, służącego do prototypowania stron internetowych, dostępnego zarówno dla Mac jak i PC. Uzyskaj dostęp: <a href="https://www.axure.com/edu">tutaj</a></p>

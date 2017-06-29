@@ -6,7 +6,7 @@ description: ""
 category: Article
 date: 2017-05-31 20:06:00 +0100
 ima: "/assets/img/fp3.png"
-tags: ["DajSiePoznac","Javascript","Programowanie Funkcyjne"]
+tags: ["DajSiePoznac","JavaScript","Programowanie Funkcyjne"]
 linkTitle: [ 
 		{a: "Czym jest Map, a czym jest Filter?", b: "a1"}
 		]
@@ -53,7 +53,7 @@ var PoliceDB = map(a => a.name + " is " + a.role, characters);
 console.log(PoliceDB); //["Butch is Boxer", "Vincent is Hitman", "Winston is Problem solver", "Jules is Hitman"]
 {% endhighlight %}
 <p>Wykonując naszą funkcję map, jako pierwszy argument podaliśmy prostą funkcję, która komponuje <code>name</code> i <code>role</code> w string, a jako drugi tablicę, na której kod ma być wykonany.</p>
-<p>Na szczęście nie musimy implementować funkcji map, za każdym razem kiedy będziemy tworzyć projekt. Javascript posiada funkcję map wbudowaną do każdej tablicy. Jest zbudowana w taki sposób, że bardzo łatwo użyć jej z innnymi funkcjami tablicowymi naraz, ponieważ nie przyjmuje tablicy jako argument, tak jak stworzyliśmy to powyżej.
+<p>Na szczęście nie musimy implementować funkcji map, za każdym razem kiedy będziemy tworzyć projekt. JavaScript posiada funkcję map wbudowaną do każdej tablicy. Jest zbudowana w taki sposób, że bardzo łatwo użyć jej z innnymi funkcjami tablicowymi naraz, ponieważ nie przyjmuje tablicy jako argument, tak jak stworzyliśmy to powyżej.
 Dlatego możemy stworzyć łańcuchy operacji na tablicy - <code>array.filter(...).map(...);</code></p>
 {% highlight javascript %} 
 var PoliceDB = characters.map(a => a.name + " is " + a.role);

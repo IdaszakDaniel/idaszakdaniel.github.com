@@ -26,7 +26,7 @@ excerpt_separator: <!--more-->
 {% highlight plain text %}$ git checkout 64b463ab817cdfb379375a6abb2ca0c616987fcf{% endhighlight %}
 
 <h3 id="a1"><span style="color:gray; font-size: 30px;">#</span> Co to jest JSON?</h3>
-<p>JSON to skrót od JavaScript Object Notation. Jest to składnia do przechowywania i przesyłania danych. Między serwerem a przeglądarką, możemy przesyłać tylko tekst, a JSON upraszcza nam to, poprzez możliwość łatwej konwersji do obiektu języka Javascript. Nazwa może być trochę myląca, jednak JSON jest kompatybilny nie tylko z Javascriptem, ale także wieloma innymi językami.</p>
+<p>JSON to skrót od JavaScript Object Notation. Jest to składnia do przechowywania i przesyłania danych. Między serwerem a przeglądarką, możemy przesyłać tylko tekst, a JSON upraszcza nam to, poprzez możliwość łatwej konwersji do obiektu języka JavaScript. Nazwa może być trochę myląca, jednak JSON jest kompatybilny nie tylko z JavaScriptem, ale także wieloma innymi językami.</p>
 
 <p>W naszej aplikacji, musimy pobrać dane, zawierające ścieżki zdjęć produktów do quizu, zarówno jak i wszystkie dane, które użytkownik będzie zgadywał. Stwórzmy więc plik <code>answers.json</code>:</p>
 {% highlight json %} 

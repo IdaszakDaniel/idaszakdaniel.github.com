@@ -5,9 +5,9 @@ titlePL: "ES6#2 Var, Let, Const - zasięg zmiennych w JS"
 description: ""
 category: Article
 ima: "/assets/img/js.png"
-tags: ["DajSiePoznac","Javascript","ES6"]
+tags: ["DajSiePoznac","JavaScript","ES6"]
 linkTitle: [ 
-		{a: "Zasięg zmiennych i funkcji w Javascript", b: "a1"},
+		{a: "Zasięg zmiennych i funkcji w JavaScript", b: "a1"},
 		{a: "IIFE, strict mode i hoisting", b: "a2"},
 		{a: "ES6 let i const", b: "a3"}
 		]
@@ -18,9 +18,9 @@ excerpt_separator: <!--more-->
 <img src="{{ site.baseurl }}/assets/img/js.png" >
 
 
-<p>W poprzednim poście opisałem jak wygląda obiektowość, jakie są jej problemy oraz przedstawiłem jak jest to rozwiązane w ES6. Tym razem pokażę jakie utrudnienia możemy napotkać w Javascript zajmując się zasięgiem zmiennych. Wrócimy krótko do zagadnienia jakim jest <code>strict mode</code> oraz <code>IIFE</code>, zainteresujemy się zmiennymi globalnymi oraz dowiemy się jak <code>let</code> oraz <code>const</code> zastępuje <code>var</code>. Zaczynajmy!</p> <!--more-->
+<p>W poprzednim poście opisałem jak wygląda obiektowość, jakie są jej problemy oraz przedstawiłem jak jest to rozwiązane w ES6. Tym razem pokażę jakie utrudnienia możemy napotkać w JavaScript zajmując się zasięgiem zmiennych. Wrócimy krótko do zagadnienia jakim jest <code>strict mode</code> oraz <code>IIFE</code>, zainteresujemy się zmiennymi globalnymi oraz dowiemy się jak <code>let</code> oraz <code>const</code> zastępuje <code>var</code>. Zaczynajmy!</p> <!--more-->
 
-<h3 id="a1"><span style="color:gray; font-size: 30px;">#</span> Zasięg zmiennych i funkcji w Javascript</h3>
+<h3 id="a1"><span style="color:gray; font-size: 30px;">#</span> Zasięg zmiennych i funkcji w JavaScript</h3>
 <p>Na początku powinniśmy wyjaśnić sobie jak działa zasięg funkcji oraz zmiennych. Czy zmienna zadeklarowana poprzez <code>var</code> jest dostępna poza tą funkcją?</p>
 {% highlight javascript %} 
 function drive(a){
@@ -54,7 +54,7 @@ function drive(){
 drive();//100
 {% endhighlight %}
 <p>W powyższym kodzie mamy podwójnie zagnieżdżoną funkcję. Wewnątrz <code>drive</code>, funkcja <code>engineStart</code> poszukuje zmiennej <code>z</code>, której nie znajduje w swoim zasięgu zmiennych, dlatego szuka jej o jeden stopień wyżej, czyli w funkcji <code>start</code>. Nie ma tam tej zmiennej, więc przechodzi później do funkcji <code>drive</code>. Tam też jej nie znajduje, więc udaje się do zasięgu globalnego i wypisuje tą zmienną. W przypadku, którym mielibyśmy tą zmienną zadeklarowaną jako globalną i drugą, o takiej samej nazwie wewnątrz funkcji, <code>engineStart</code> wypisałaby pierwszą na którą natrafi.</p>
-<p>Czy jest to pożądane zachowanie, czy raczej niebezpieczny efekt uboczny? Bez takiego mechanizmu programowanie w Javascript byłoby niesamowicie utrudnione, jednak musimy bardzo uważać, żeby nie sprawiło to nieoczekiwanych kłopotów. Spójrzmy na przykład:</p>
+<p>Czy jest to pożądane zachowanie, czy raczej niebezpieczny efekt uboczny? Bez takiego mechanizmu programowanie w JavaScript byłoby niesamowicie utrudnione, jednak musimy bardzo uważać, żeby nie sprawiło to nieoczekiwanych kłopotów. Spójrzmy na przykład:</p>
 {% highlight javascript %} 
 for (var i = 0; i < 5; i++){
     console.log(i);
@@ -70,7 +70,7 @@ console.log('na koniec pętli:', i);
 4
 "na koniec pętli:5"
 {% endhighlight %}
-<p>Dlaczego jest to złe? Dobrą praktyką pisania kodu jest ukrywanie kodu w funkcjach i tworzenie minimalnej ilości zmiennych. W takim przypadku musielibyśmy tworzyć inną zmienną do każdej pętli. Co spowodowało taki wynik? Javascript ma tylko jeden mechanizm zasięgu i są to funkcje. A więc jak możemy naprawić nasz kod?</p>
+<p>Dlaczego jest to złe? Dobrą praktyką pisania kodu jest ukrywanie kodu w funkcjach i tworzenie minimalnej ilości zmiennych. W takim przypadku musielibyśmy tworzyć inną zmienną do każdej pętli. Co spowodowało taki wynik? JavaScript ma tylko jeden mechanizm zasięgu i są to funkcje. A więc jak możemy naprawić nasz kod?</p>
 <h3 id="a2"><span style="color:gray; font-size: 30px;">#</span> IIFE, strict mode i hoisting</h3>
 <p>Na temat IIFE oraz strict mode pisałem już w innym poście, przy okazji opisywania dobrych praktyk w AngularJS<br> <a href="http://www.idaszak.com/article/2017/03/23/daj-sie-poznac-2-projekt-konkursowy-mistrzmakro">http://www.idaszak.com/article/2017/03/23/daj-sie-poznac-2-projekt-konkursowy-mistrzmakro</a> dlatego pominę wstępne tłumaczenie.</p>
 <p>Użyjmy IIFE do stworzenia zasięgu funkcji, który nie pozwoli naszej zmiennej <code>i</code> stać się zmienną globalną:</p>

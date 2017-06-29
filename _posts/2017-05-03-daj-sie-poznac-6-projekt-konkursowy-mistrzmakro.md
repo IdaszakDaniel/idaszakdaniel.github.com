@@ -19,7 +19,7 @@ excerpt_separator: <!--more-->
 <img src="{{ site.baseurl }}/assets/img/DSP.png" alt="" style="display: inline-block; padding-right: 20px;">
 <img src="{{ site.baseurl }}/assets/img/angular.png" alt="" style="display: inline-block;">
 </center><br>
-<p>W poprzednich częściach tworzyliśmy aplikację AngularJS Mistrz Makro, która jest quizem, pozwalającym na zgadywanie makroskładników produktu przedstawionego na zdjęciu. Udało się nam stworzyć modele, pozwalające na zarządzanie danymi aplikacji. Odebraliśmy dane z pliku JSON i wyświetliliśmy je w konsoli. W poprzedniej części zaczęliśmy budować główny mechanizm napędzający aplikacje, czyli dyrektywę. Stworzyliśmy jej część składającą się z pliku HTML. Tym razem znów zajmiemy się dyrektywą i utworzymy plik Javascript, który sprawi, że nasz quiz zacznie działać tak jak powinien. Zaczynajmy!</p><!--more-->
+<p>W poprzednich częściach tworzyliśmy aplikację AngularJS Mistrz Makro, która jest quizem, pozwalającym na zgadywanie makroskładników produktu przedstawionego na zdjęciu. Udało się nam stworzyć modele, pozwalające na zarządzanie danymi aplikacji. Odebraliśmy dane z pliku JSON i wyświetliliśmy je w konsoli. W poprzedniej części zaczęliśmy budować główny mechanizm napędzający aplikacje, czyli dyrektywę. Stworzyliśmy jej część składającą się z pliku HTML. Tym razem znów zajmiemy się dyrektywą i utworzymy plik JavaScript, który sprawi, że nasz quiz zacznie działać tak jak powinien. Zaczynajmy!</p><!--more-->
 
 <x>Jeśli pobrałeś już moje repozytorium z Githuba, co opisałem w <a href="http://www.idaszak.com/article/2017/03/23/daj-sie-poznac-2-projekt-konkursowy-mistrzmakro">poprzednim poście</a> to możesz teraz przeskoczyć do kolejnego commita, który pokaże Ci kod z tego posta:</x>
 {% highlight plain text %}$ git checkout 28c29bb2082ce088dc554c5c73cd01c02163d8c9{% endhighlight %}
@@ -184,7 +184,7 @@ scope.reset = function() {
 <p>Ostatnią już funkcją tej dyrektywy jest <code>scope.reset()</code>, które wywoływany jest przez przycisk <code>play again</code>, pojawiający się w momencie kiedy w bazie zabraknie pytań. Funkcja zmienia stan <code>inProgress</code>, dzięki czemu wracamy do przycisku <code>start</code>.</p>
 
 <h3 id="a3"><span style="color:gray; font-size: 30px;">#</span> Cały kod dyrektywy</h3>
-<p>Tak prezentuje się cały kod Javascript dyrektywy, którą zapisałem jako <code>macro.directive.js</code>:</p>
+<p>Tak prezentuje się cały kod JavaScript dyrektywy, którą zapisałem jako <code>macro.directive.js</code>:</p>
 {% highlight javascript %}
 (function() {
   'use strict';

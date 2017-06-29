@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Javascript
+title: JavaScript
 tagline: Supporting tagline
 ---
 {% include JB/setup %}

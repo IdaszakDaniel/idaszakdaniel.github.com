@@ -6,7 +6,7 @@ description: ""
 category: Article
 date: 2017-05-07 13:40:00 +0100
 ima: "/assets/img/js.png"
-tags: ["DajSiePoznac","Javascript","ES6","Programowanie Funkcyjne"]
+tags: ["DajSiePoznac","JavaScript","ES6","Programowanie Funkcyjne"]
 linkTitle: [ 
 		{a: "Czym są arrow functions?", b: "a1"},
 		{a: "Zastosowanie arrow functions - funkcja filter", b: "a2"}
@@ -17,13 +17,13 @@ excerpt_separator: <!--more-->
 
 <img src="{{ site.baseurl }}/assets/img/js.png" >
 
-<p>W poprzednich częściach serii dotyczącej standardu ECMASCRIPT6 języka Javascript poznaliśmy słowo kluczowe <code>class</code>, dowiedzieliśmy się czym jest <code>let</code> i <code>const</code> oraz <code>spread</code> i <code>rest</code> przy okazji omawiania destrukturyzacji. Tym razem zajmiemy się chyba najbardziej rozpoznawalną funkcjonalnością ES6, czyli funkcjami strzałkowymi. Arrow Functions pozwalają na skrócenie i zwiększenie czytelności naszego kodu, co jest bardzo pożądanym zjawiskiem przez wszystkich programistów. Zachaczymy też trochę o podstawy programowania funkcyjnego, ponieważ to właśnie przy okazji pisania takiego kodu najbardziej są przydatne te funkcje. Zaczynajmy!</p><!--more-->
+<p>W poprzednich częściach serii dotyczącej standardu ECMASCRIPT6 języka JavaScript poznaliśmy słowo kluczowe <code>class</code>, dowiedzieliśmy się czym jest <code>let</code> i <code>const</code> oraz <code>spread</code> i <code>rest</code> przy okazji omawiania destrukturyzacji. Tym razem zajmiemy się chyba najbardziej rozpoznawalną funkcjonalnością ES6, czyli funkcjami strzałkowymi. Arrow Functions pozwalają na skrócenie i zwiększenie czytelności naszego kodu, co jest bardzo pożądanym zjawiskiem przez wszystkich programistów. Zachaczymy też trochę o podstawy programowania funkcyjnego, ponieważ to właśnie przy okazji pisania takiego kodu najbardziej są przydatne te funkcje. Zaczynajmy!</p><!--more-->
 
 <p>Jeśli nie czytałeś jeszcze wcześniejszych części, to rzuć okiem na <a href="http://www.idaszak.com/article/2017/04/05/es6-2-var-let-const">http://www.idaszak.com/article/2017/04/05/es6-2-var-let-const</a>,<br> ponieważ w poniższym kodzie będziemy korzystać z <code>let</code> oraz <code>const</code>. Zapraszam także do zapoznania się z klasami w ES6: <br><a href="http://www.idaszak.com/article/2017/04/02/czy-javascript-jest-obiektowy">http://www.idaszak.com/article/2017/04/02/czy-javascript-jest-obiektowy</a></p>
 
 <h3 id="a1"><span style="color:gray; font-size: 30px;">#</span> Czym są arrow functions?</h3>
 <p>Funkcje strzałkowe, czyli arrow functions zastępują nam funkcje anonimowe, oferując znacznie krótszą składnie.</p>
-<p>Aby je zastosować używamy znaku <code>=></code>, czyli grubej strzałki, której składnia wzięła się z CoffeScripta, czyli języka kompilowanego do Javascriptu. Jeśli znasz taki język jak Haskell, to pewnie już spotkałeś się z takimi funkcjami.</p>
+<p>Aby je zastosować używamy znaku <code>=></code>, czyli grubej strzałki, której składnia wzięła się z CoffeScripta, czyli języka kompilowanego do JavaScriptu. Jeśli znasz taki język jak Haskell, to pewnie już spotkałeś się z takimi funkcjami.</p>
 <p>Zacznijmy od prostego przykładu, który zobrazuje różnice między funkcjami.</p>
 
 {% highlight javascript %} 

@@ -6,7 +6,7 @@ description: ""
 category: Article
 date: 2017-05-25 11:30:00 +0100
 ima: "/assets/img/fp2.png"
-tags: ["DajSiePoznac","Javascript","Programowanie Funkcyjne"]
+tags: ["DajSiePoznac","JavaScript","Programowanie Funkcyjne"]
 linkTitle: [ 
 		{a: "Czym jest domknięcie - krótka definicja", b: "a1"},
 		{a: "Czym na prawdę jest domknięcie?", b: "a2"},
@@ -21,11 +21,11 @@ excerpt_separator: <!--more-->
 <img src="{{ site.baseurl }}/assets/img/js.png" style="display: inline-block;">
 <img src="{{ site.baseurl }}/assets/img/fp.png" style="display: inline-block;">
 </center>
-<p>W tej serii uczymy się Podstaw Programowania Funkcyjnego. Wykorzystamy przy okazji wiedzę zdobytą w <a href="https://www.idaszak.com/article/2017/04/02/czy-javascript-jest-obiektowy">serii dotyczącej ES6</a>. Tym razem zmierzymy się z postrachem początkujących programistów Javascript, czyli domknięciami. Udowodnię że na pewno już się z nimi spotkałeś i wcale nie są trudne do zrozumienia. Zaczynajmy!</p><!--more-->
+<p>W tej serii uczymy się Podstaw Programowania Funkcyjnego. Wykorzystamy przy okazji wiedzę zdobytą w <a href="https://www.idaszak.com/article/2017/04/02/czy-javascript-jest-obiektowy">serii dotyczącej ES6</a>. Tym razem zmierzymy się z postrachem początkujących programistów JavaScript, czyli domknięciami. Udowodnię że na pewno już się z nimi spotkałeś i wcale nie są trudne do zrozumienia. Zaczynajmy!</p><!--more-->
 
 
 <h3 id="a1"><span style="color:gray; font-size: 30px;">#</span> Czym jest domknięcie - krótka definicja</h3>
-<p>Domknięcie (Closure), to zagadnienie, którym doświadczeni programiści wręcz straszą początkujących. Wszędzie mówi się że to pytanie pojawia się zawsze na rozmowie kwalifikacyjnej. Jednak nie należy się tego bać, ponieważ domknięcie jest bardzo proste do zrozumienia, co więcej - jeśli już pisałeś jakiś kod w Javascript, to z pewnością zetknąłeś się już z Closures nieświadomie.</p>
+<p>Domknięcie (Closure), to zagadnienie, którym doświadczeni programiści wręcz straszą początkujących. Wszędzie mówi się że to pytanie pojawia się zawsze na rozmowie kwalifikacyjnej. Jednak nie należy się tego bać, ponieważ domknięcie jest bardzo proste do zrozumienia, co więcej - jeśli już pisałeś jakiś kod w JavaScript, to z pewnością zetknąłeś się już z Closures nieświadomie.</p>
 <p>Jakiś czas temu na twitterze pojawił się challenge, który polegał na wytłumaczeniu czym jest domknięcie za pomocą limitu znaków jednego tweeta. Teraz jest to skarbnica definicji, pozwalająca zrozumieć to zagadnienie w bardzo łatwy sposób, dlatego przytoczę jedno z nich.</p>
 
 <blockquote class="twitter-tweet" data-lang="pl"><p lang="en" dir="ltr"><a href="https://twitter.com/JS_Cheerleader">@JS_Cheerleader</a> a stateful function.</p>&mdash; David K. 🎹 (@DavidKPiano) <a href="https://twitter.com/DavidKPiano/status/683479456019779585">3 stycznia 2016</a></blockquote>
@@ -85,7 +85,7 @@ function outer() {
 var higherOrder = outer();
 higherOrder(5); // 5
 {% endhighlight %}
-<p>Dlaczego jest to możliwe? Ponieważ w języku Javascript funkcje mogą być traktowane jako wartości.</p>
+<p>Dlaczego jest to możliwe? Ponieważ w języku JavaScript funkcje mogą być traktowane jako wartości.</p>
 <p>Jednak Higher Order Functions mogą także przyjmować funkcje jako argumenty:</p>
 {% highlight javascript %} 
 function hof(x,fn) {

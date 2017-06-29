@@ -41,7 +41,7 @@ console.log(ProductModel.getQuestion(0));
 <p>Podany kod wyświetli nam element o indeksie <code>0</code> pobrany z pliku JSON.</p>
 
 <h3 id="a2"><span style="color:gray; font-size: 30px;">#</span> Tworzymy widok dyrektywy</h3>
-<p>Stworzymy teraz strukturę pliku HTML, który zostanie wstrzyknięty do naszego widoku poprzez dyrektywę. Nie będzie jeszcze gotowa do użycia, ponieważ potrzebujemy jeszcze kodu Javascript, ale tym zajmiemy się w części kolejnej.</p>
+<p>Stworzymy teraz strukturę pliku HTML, który zostanie wstrzyknięty do naszego widoku poprzez dyrektywę. Nie będzie jeszcze gotowa do użycia, ponieważ potrzebujemy jeszcze kodu JavaScript, ale tym zajmiemy się w części kolejnej.</p>
 {% highlight html %} 
 <div class="container" ng-show="inProgress">
   <div class="row">
