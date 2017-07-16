@@ -19,7 +19,7 @@ excerpt_separator: <!--more-->
 {% include JB/setup %}
 
 <p>W tym artykule opiszę czym jest <code>this</code>, jak się ma do tego i czym się różni <code>call</code>, <code>apply</code> oraz <code>bind</code>. Wrócimy także do postów o arrow functions, gdzie należałoby bardziej rozwinąć jak zachowuje się w ich przypadku <code>this</code>.</p>
-<p>Artykuł o arrow function można znaleźć: </p><a href="https://www.idaszak.com/article/2017/05/07/es6-4-arrow-functions-funkcje-strzalkowe">tutaj</a><!--more-->
+<p>Artykuł o arrow function można znaleźć: <a href="https://www.idaszak.com/article/2017/05/07/es6-4-arrow-functions-funkcje-strzalkowe">tutaj</a></p><!--more-->
 
 
 <h3 id="a1"><span style="color:gray; font-size: 30px;">#</span> Czym jest this?</h3>
