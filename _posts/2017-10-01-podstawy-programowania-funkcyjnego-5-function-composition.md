@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Podstawy Programowania Funkcyjnego #4 Partial Aplication, Currying"
-titlePL: "Podstawy Programowania Funkcyjnego #4 Partial Aplication, Currying"
+title: "Podstawy Programowania Funkcyjnego #5 Partial Aplication, Currying"
+titlePL: "Podstawy Programowania Funkcyjnego #5 Partial Aplication, Currying"
 description: ""
 category: Article
 date: 2017-10-22 13:06:00 +0100
