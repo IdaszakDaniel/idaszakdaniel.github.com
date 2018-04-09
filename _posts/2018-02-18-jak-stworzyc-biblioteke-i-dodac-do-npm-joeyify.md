@@ -6,7 +6,7 @@ description: ""
 category: Article
 date: 2018-02-18 11:00:00 +0100
 ima: "/assets/img/gk.png"
-tags: ["JavaScript, Node.JS, Testy"]
+tags: ["JavaScript", "Node.JS", "Testowanie"]
 linkTitle: [
 		{a: "Joeyify - automatyczny słownik synonimów", b: "a1"},
 		{a: "Konfiguracja biblioteki JavaScript", b: "a2"},
@@ -26,7 +26,7 @@ excerpt_separator: <!--more-->
 <p>Tym razem zrobimy coś innego, odbiegającego od reszty kursów. Na przykładzie mojej biblioteki pokażę wam jak stworzyć i dodać coś swojego do NPM. Chyba każda
 	osoba pisząca w Javascript ma pojęcie czym jest środowisko Node.JS i zbudowany (początkowo tylko dla niego) manager bibliotek JS. NPM jest obecnie największym
 	na świecie tego typu managerem i osobiście wychodzę z założenia, że jeśli nie ma czegoś w NPM, to nie da się tego zrobić :)
-	 Zaczynajmy!</p><!--more-->
+	 Zaczynajmy!</p><<!--more--></!--more-->
 
 <h3 id="a1"><span style="color:gray; font-size: 30px;">#</span> Joeyify - automatyczny słownik synonimów</h3>
 <p> Dzięki bibliotece, którą stworzyłem możemy zastosować w tekście automatyczny słownik synonimów, czyli tzw. Thesaurus. Moja biblioteka została stworzona
